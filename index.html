@@ -3,10 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="theme-color" content="#060606">
 <title>FORGE</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -278,6 +274,40 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 /* PERIODIZATION */
 .peri-card{background:rgba(102,122,255,.07);border:1px solid rgba(102,122,255,.2);border-radius:var(--r);padding:11px 12px;margin:0 12px 8px;}
 </style>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FORGE">
+<meta name="application-name" content="FORGE">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzA3MDcwNyIvPgogIDxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSI1MTAiIGhlaWdodD0iNTEwIiByeD0iMTExIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iOCIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgwIiBmb250LXdlaWdodD0iOTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzhmZjAwIj5GPC90ZXh0PgogIDxyZWN0IHg9IjgwIiB5PSIzODAiIHdpZHRoPSIzNTIiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjYzhmZjAwIiBvcGFjaXR5PSIwLjQiLz4KPC9zdmc+">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzA3MDcwNyIvPgogIDxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSI1MTAiIGhlaWdodD0iNTEwIiByeD0iMTExIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iOCIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgwIiBmb250LXdlaWdodD0iOTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzhmZjAwIj5GPC90ZXh0PgogIDxyZWN0IHg9IjgwIiB5PSIzODAiIHdpZHRoPSIzNTIiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjYzhmZjAwIiBvcGFjaXR5PSIwLjQiLz4KPC9zdmc+">
+<link rel="manifest" id="pwa-manifest">
+<script id="pwa-setup">
+(function(){
+  var manifest = {
+  "name": "FORGE — AI Fitness Coach",
+  "short_name": "FORGE",
+  "description": "High-performance AI coach for strength, running, spinning and rehabilitation.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#070707",
+  "theme_color": "#070707",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjExMiIgZmlsbD0iIzA3MDcwNyIvPgogIDxyZWN0IHg9IjEiIHk9IjEiIHdpZHRoPSI1MTAiIGhlaWdodD0iNTEwIiByeD0iMTExIiBmaWxsPSJub25lIiBzdHJva2U9IiNjOGZmMDAiIHN0cm9rZS13aWR0aD0iOCIvPgogIDx0ZXh0IHg9IjI1NiIgeT0iMzQwIiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgwIiBmb250LXdlaWdodD0iOTAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjYzhmZjAwIj5GPC90ZXh0PgogIDxyZWN0IHg9IjgwIiB5PSIzODAiIHdpZHRoPSIzNTIiIGhlaWdodD0iMTIiIHJ4PSI2IiBmaWxsPSIjYzhmZjAwIiBvcGFjaXR5PSIwLjQiLz4KPC9zdmc+",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+};
+  var blob = new Blob([JSON.stringify(manifest)], {type:'application/json'});
+  var url = URL.createObjectURL(blob);
+  document.getElementById('pwa-manifest').setAttribute('href', url);
+})();
+</script>
 </head>
 <body>
 <div id="app" style="display:none;">
